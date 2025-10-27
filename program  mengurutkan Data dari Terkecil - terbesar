@@ -1,0 +1,25 @@
+# Program Mengurutkan Data dari Terkecil ke Terbesar
+
+print("Program Mengurutkan Data dari Terkecil ke Terbesar")
+
+# Meminta jumlah data dari pengguna
+jumlah_data = int(input("Masukkan jumlah data (minimal 2): "))
+
+# Validasi jumlah data minimal 2
+if jumlah_data < 2:
+    print("Jumlah data harus minimal 2!")
+else:
+    data = []  # membuat list kosong untuk menyimpan data
+
+    # Input data satu per satu
+    for i in range(jumlah_data): 
+        nilai = float(input(f"Masukkan data ke-{i+1}: "))
+        data.append(nilai)
+
+    # Mengurutkan data
+    data.sort()
+
+    # Menampilkan hasil
+    print("\nData setelah diurutkan (dari terkecil ke terbesar):")
+    for nilai in data:
+        print(nilai)
