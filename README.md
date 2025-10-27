@@ -1,3 +1,47 @@
+program mencari bilangan terbesar 
+
+# 🧮 Program Mencari Bilangan Terbesar
+
+Program ini dibuat menggunakan bahasa **Python** untuk menentukan **bilangan terbesar** dari empat buah bilangan yang dimasukkan oleh pengguna.  
+Program menggunakan **percabangan `if`** untuk melakukan perbandingan antar bilangan tanpa menggunakan fungsi bawaan seperti `max()`.
+
+---
+
+## 📋 Fitur Program
+- Menerima input **4 buah bilangan** dari pengguna.
+- Menentukan bilangan yang paling **besar** menggunakan logika perbandingan manual.
+- Menampilkan semua bilangan yang dimasukkan serta hasil bilangan terbesar.
+
+---
+
+## 💻 Kode Program
+
+```python
+print("=== Program Mencari Bilangan Terbesar ===")
+print("Masukkan 4 buah bilangan:")
+
+# Input 4 bilangan
+bil1 = float(input("Bilangan 1: "))
+bil2 = float(input("Bilangan 2: "))
+bil3 = float(input("Bilangan 3: "))
+bil4 = float(input("Bilangan 4: "))
+
+# Mencari bilangan terbesar menggunakan statement if
+terbesar = bil1
+
+if bil2 > terbesar:
+    terbesar = bil2
+
+if bil3 > terbesar:
+    terbesar = bil3
+
+if bil4 > terbesar:
+    terbesar = bil4
+
+# Menampilkan hasil
+print("\n=== HASIL ===")
+print(f"Bilangan yang dimasukkan: {bil1}, {bil2}, {bil3}, {bil4}")
+print(f"Bilangan terbesar adalah: {terbesar}")
 
 
 
